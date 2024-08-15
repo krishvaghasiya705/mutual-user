@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montaga", serif;
+}
+
+/* ::-webkit-scrollbar {
+  width: 7px;
+  height: 5px;
+} */
+
+/* ::-webkit-scrollbar-track {
+  background: #FFF;
+} */
+
+/* ::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  background: #EF404A;
+  border-radius: 10px 0 0 10px;
+} */
+
+/* ::-webkit-scrollbar-thumb:hover {
+  background: #ff000d;
+} */
+
+/* ::-moz-selection {
+  color: #EF404A;
+  background: #FFF;
+}
+
+::selection {
+  color: #EF404A;
+  background: #FFF;
+} */
