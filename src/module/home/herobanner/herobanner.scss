@@ -23,6 +23,7 @@
                 display: flex;
                 justify-content: start;
                 align-items: center;
+                flex-direction: column;
 
                 h1 {
                     font-family: "Montaga", serif;
@@ -31,10 +32,13 @@
                     line-height: 109.5px;
                     text-align: right;
                     color: #FFF;
-                    max-width: 1000px;
 
                     span {
                         color: #000;
+                    }
+
+                    svg {
+                        margin: 10px 0 0 0;
                     }
                 }
             }
