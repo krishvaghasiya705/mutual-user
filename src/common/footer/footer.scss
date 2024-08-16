@@ -1,0 +1,172 @@
+footer {
+    background-image: url("../../assets/svg/footerBG.svg");
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+    padding: 154px 0 21px 0;
+    position: relative;
+
+    .top-arrow {
+        position: absolute;
+        top: 31px;
+        right: 50px;
+
+        img {
+            cursor: pointer;
+            border-radius: 50%;
+            padding: 18px;
+            background-color: #f3363c;
+        }
+    }
+
+    .footer-title {
+        max-width: 588px;
+        margin: 0 auto;
+        margin-bottom: 37px;
+
+        h2 {
+            font-family: "Helvetica", "Arial", sans-serif;
+            font-size: 60px;
+            font-weight: 700;
+            line-height: 76px;
+            letter-spacing: 0.02em;
+            text-align: center;
+            color: #fff;
+
+            span {
+                font-family: "Helvetica", "Arial", sans-serif;
+                color: #000;
+
+                .muyualz-text {
+                    font-family: "Golden Plains - Demo", sans-serif;
+                    font-weight: 400;
+                    text-align: center;
+                }
+            }
+        }
+
+        p {
+            margin-top: 5px;
+            font-family: "Helvetica", "Arial", sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 37px;
+            letter-spacing: 0.02em;
+            text-align: center;
+        }
+    }
+
+    .footer-input {
+        max-width: 604px;
+        margin: 0 auto;
+
+        .input-div {
+            position: relative;
+
+            input {
+                width: calc(100% - 90px);
+                padding: 11px 45px 9.5px 45px;
+                border: none;
+                border-radius: 50px;
+                font-family: "Helvetica", "Arial", sans-serif;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 37px;
+                letter-spacing: 0.02em;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            ::placeholder {
+                color: #0000002b;
+            }
+
+            .arrow-right {
+                position: absolute;
+                top: 0;
+                right: 0;
+
+                img {
+                    border-radius: 50%;
+                    padding: 18px;
+                    background-color: #1a1822;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .checkbox-div {
+            margin-top: 8px;
+            display: flex;
+            align-items: start;
+            justify-content: center;
+
+            input {
+                width: 15px;
+                height: 15px;
+                cursor: pointer;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            p {
+                margin: 3px 0 0 3px;
+                max-width: 507px;
+                font-family: "Helvetica", "Arial", sans-serif;
+                font-size: 8px;
+                font-weight: 300;
+                line-height: 10px;
+                letter-spacing: 0.02em;
+                color: #000;
+
+                a {
+                    font-family: "Helvetica", "Arial", sans-serif;
+                    color: #000;
+                }
+            }
+        }
+
+        h3 {
+            margin: 10px 0 18px 0;
+            font-family: "Golden Plains - Demo", sans-serif;
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 76px;
+            letter-spacing: 0.02em;
+            text-align: center;
+        }
+    }
+
+    .footer-links {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        justify-content: center;
+
+        a {
+            font-family: "Heebo", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 41.66px;
+            text-decoration-line: none;
+            color: #000;
+
+            &:last-child {
+                font-weight: 700;
+            }
+        }
+    }
+
+    .copyright {
+        margin-top: 16px;
+        font-family: "Heebo", sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 41.66px;
+        text-align: center;
+    }
+}
