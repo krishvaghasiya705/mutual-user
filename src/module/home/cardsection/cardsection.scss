@@ -6,12 +6,25 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 22px;
 
+    @media (max-width: 1024px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
     .card-div {
         min-height: 560px;
         border-radius: 30px;
         overflow: hidden;
         position: relative;
         cursor: pointer;
+
+        @media (max-width: 1024px) {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 576px) {
+            min-height: 400px;
+        }
 
         img {
             height: 100%;
@@ -41,6 +54,10 @@
                 color: #4de5ea;
                 transform: translateY(50px);
                 transition: 0.3s ease-in-out;
+
+                @media (max-width: 576px) {
+                    font-size: 40px;
+                }
             }
 
             span {

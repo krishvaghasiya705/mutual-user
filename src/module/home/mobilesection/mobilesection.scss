@@ -1,8 +1,16 @@
 .mobile-section {
     margin: 100px 0 170px 0;
 
+    @media (max-width: 576px) {
+        margin: 60px 0;
+    }
+
     .mobile-container {
         padding-left: max(0px, (100vw - 1180px) / 2);
+
+        @media (max-width: 1024px) {
+            padding-right: 20px;
+        }
 
         .mobile-div {
             padding-left: 20px;
@@ -10,7 +18,20 @@
             grid-template-columns: 32% 1fr;
             align-items: center;
 
+            @media (max-width: 1024px) {
+                grid-template-columns: 1fr;
+            }
+
             .mobile-div-content {
+                @media (max-width: 1024px) {
+                    max-width: 50%;
+                }
+
+                @media (max-width: 576px) {
+                    max-width: 100%;
+                    margin-bottom: 30px;
+                }
+
                 p {
                     font-size: 34px;
                     font-weight: 400;
@@ -19,6 +40,16 @@
                     &:last-of-type {
                         padding-bottom: 34px;
                         line-height: 54px;
+                    }
+
+                    @media (max-width: 576px) {
+                        font-size: 26px;
+                        line-height: 40px;
+
+                        &:last-of-type {
+                            padding-bottom: 14px;
+                            line-height: 40px;
+                        }
                     }
                 }
 
@@ -29,6 +60,10 @@
                     font-weight: 700;
                     line-height: 60px;
                     color: #f3363c;
+
+                    @media (max-width: 576px) {
+                        font-size: 46px;
+                    }
                 }
 
                 img {
