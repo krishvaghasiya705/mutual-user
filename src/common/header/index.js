@@ -9,13 +9,14 @@ function Header() {
   return (
     <div>
       <header>
-        <div className="header-main-alignment">
-          <div className="header-logo-main">
-            <NavLink to={"/"}>
-              <img src={Headerlogo} alt="Headerlogo" />
-            </NavLink>
-          </div>
-          {/* <div className="header-content-main-alignment"> */}
+        <div className="header-container">
+          <div className="header-main-alignment">
+            <div className="header-logo-main">
+              <NavLink to={"/"}>
+                <img src={Headerlogo} alt="Headerlogo" />
+              </NavLink>
+            </div>
+            {/* <div className="header-content-main-alignment"> */}
             <div className="header-content-main-one">
               <NavLink to={"/"}>
                 <div className="teil-button">
@@ -52,7 +53,8 @@ function Header() {
                 </button>
               </div>
             </div>
-          {/* </div> */}
+            {/* </div> */}
+          </div>
         </div>
       </header>
     </div>

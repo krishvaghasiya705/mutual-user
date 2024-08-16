@@ -1,183 +1,188 @@
 header {
-    position: static;
     width: 100%;
     box-sizing: border-box;
-    padding: 62px 53px 0 71px;
+    padding: 62px 0 0 0;
     font-family: 'Helvetica', 'Arial', sans-serif;
     font-family: 'Golden Plains - Demo', sans-serif;
     background-color: transparent;
     background: linear-gradient(90deg, #1A1822 50%, #F3363C 50%);
 
-    .header-main-alignment {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 54px;
+    .header-container {
+        max-width: -webkit-fill-available;
+        margin: 0 auto;
+        padding: 0 20px;
 
-        .header-logo-main {
+        .header-main-alignment {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
+            gap: 10px;
 
-            a {
-                text-decoration-line: none;
+            .header-logo-main {
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
-                img {
-                    width: 200px;
-                    height: 50px;
+                a {
+                    text-decoration-line: none;
+
+                    img {
+                        width: 200px;
+                        height: 50px;
+                    }
                 }
             }
-        }
 
-        .header-content-main-alignment {
-            display: flex;
-            justify-content: end;
-            align-items: center;
-            gap: 20px;
-        }
+            .header-content-main-alignment {
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                gap: 20px;
+            }
 
-        .header-content-main-one {
-            display: flex;
-            justify-content: end;
-            align-items: center;
-            gap: 44px;
-            padding: 11px 15px;
+            .header-content-main-one {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 20px;
+                padding: 11px 15px;
 
-            .teil-button {
-                // background-color: #1A1822;
-                border-radius: 20px;
-
-                button {
-                    cursor: pointer;
-                    background-color: #AEAEAE1A;
-                    border: none;
+                .teil-button {
+                    // background-color: #1A1822;
                     border-radius: 20px;
-                    padding: 11px 15px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 5px;
-                    outline: none;
 
-                    &:focus {
-                        outline: none;
-                    }
-
-                    p {
-                        font-family: 'Helvetica', 'Arial', sans-serif;
-                        font-size: 16px;
-                        font-weight: 700;
-                        line-height: 16.5px;
-                        letter-spacing: 0.02em;
-                        text-align: center;
-                        color: #FFF;
-                    }
-                }
-            }
-
-            a {
-                font-family: 'Helvetica', 'Arial', sans-serif;
-                font-size: 16px;
-                font-weight: 700;
-                line-height: 16.5px;
-                letter-spacing: 0.02em;
-                text-align: center;
-                color: #FFF;
-                text-decoration-line: none;
-            }
-        }
-
-        .header-content-main-two {
-            display: flex;
-            justify-content: end;
-            align-items: center;
-            gap: 20px;
-
-            .mutuals-button {
-                border-radius: 20px;
-                // background-color: #F3363C;
-
-                button {
-                    cursor: pointer;
-                    background-color: #FFFFFF1A;
-                    border: none;
-                    border-radius: 20px;
-                    padding: 11px 15px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 5px;
-                    outline: none;
-
-                    &:focus {
-                        outline: none;
-                    }
-
-                    p {
-                        font-family: 'Helvetica', 'Arial', sans-serif;
-                        font-size: 16px;
-                        font-weight: 700;
-                        line-height: 16.5px;
-                        letter-spacing: 0.02em;
-                        text-align: center;
-                        color: #FFF;
-
-                        span {
-                            font-family: 'Golden Plains - Demo', sans-serif;
-                            font-weight: 400;
-                            text-align: center;
-                        }
-                    }
-                }
-            }
-
-            a {
-                text-decoration-line: none;
-            }
-
-            .language-button {
-
-                button {
-                    padding: 3px 3px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 6px;
-                    background: #FFFFFF;
-                    border-radius: 15px;
-                    border: none;
-                    outline: none;
-
-                    &:focus {
-                        outline: none;
-                    }
-
-                    p {
+                    button {
                         cursor: pointer;
-                        background-color: transparent;
-                        border-radius: 50%;
+                        background-color: #AEAEAE1A;
+                        border: none;
+                        border-radius: 20px;
+                        padding: 11px 15px;
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        width: 24px;
-                        height: 24px;
+                        gap: 5px;
+                        outline: none;
 
-                        span {
+                        &:focus {
+                            outline: none;
+                        }
+
+                        p {
                             font-family: 'Helvetica', 'Arial', sans-serif;
-                            font-size: 10px;
+                            font-size: 16px;
                             font-weight: 700;
-                            line-height: 9.5px;
+                            line-height: 16.5px;
                             letter-spacing: 0.02em;
                             text-align: center;
-                            color: #7E7E7E;
+                            color: #FFF;
                         }
                     }
+                }
 
-                    #Checked {
-                        background-color: #F3363C !important;
+                a {
+                    font-family: 'Helvetica', 'Arial', sans-serif;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 16.5px;
+                    letter-spacing: 0.02em;
+                    text-align: center;
+                    color: #FFF;
+                    text-decoration-line: none;
+                }
+            }
 
-                        span {
-                            color: #FFF !important;
+            .header-content-main-two {
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                gap: 20px;
+
+                .mutuals-button {
+                    border-radius: 20px;
+                    // background-color: #F3363C;
+
+                    button {
+                        cursor: pointer;
+                        background-color: #FFFFFF1A;
+                        border: none;
+                        border-radius: 20px;
+                        padding: 11px 15px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 5px;
+                        outline: none;
+
+                        &:focus {
+                            outline: none;
+                        }
+
+                        p {
+                            font-family: 'Helvetica', 'Arial', sans-serif;
+                            font-size: 16px;
+                            font-weight: 700;
+                            line-height: 16.5px;
+                            letter-spacing: 0.02em;
+                            text-align: center;
+                            color: #FFF;
+
+                            span {
+                                font-family: 'Golden Plains - Demo', sans-serif;
+                                font-weight: 400;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+
+                a {
+                    text-decoration-line: none;
+                }
+
+                .language-button {
+
+                    button {
+                        padding: 3px 3px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 6px;
+                        background: #FFFFFF;
+                        border-radius: 15px;
+                        border: none;
+                        outline: none;
+
+                        &:focus {
+                            outline: none;
+                        }
+
+                        p {
+                            cursor: pointer;
+                            background-color: transparent;
+                            border-radius: 50%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 24px;
+                            height: 24px;
+
+                            span {
+                                font-family: 'Helvetica', 'Arial', sans-serif;
+                                font-size: 10px;
+                                font-weight: 700;
+                                line-height: 9.5px;
+                                letter-spacing: 0.02em;
+                                text-align: center;
+                                color: #7E7E7E;
+                            }
+                        }
+
+                        #Checked {
+                            background-color: #F3363C !important;
+
+                            span {
+                                color: #FFF !important;
+                            }
                         }
                     }
                 }

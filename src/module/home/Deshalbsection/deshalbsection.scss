@@ -53,8 +53,28 @@
         .deshalb-grid-items-two {
             text-align: left;
 
+            .das-slide-div-main {
+
+                .das-slide-flow-main {}
+
+                .das-titles-div-main {
+                    padding: 23px 0 24px 29px;
+
+                    h2 {
+                        font-family: 'Helvetica', 'Arial', sans-serif;
+                        font-size: 32px;
+                        font-weight: 700;
+                        line-height: normal;
+                        letter-spacing: 0.02em;
+                        text-align: left;
+                        color: #000;
+                        padding: 0 0 30px 0;
+                    }
+                }
+            }
+
             .deshalb-grid-items-two-peragraph {
-                padding: 21px;
+                padding: 42px 0 0 21px;
 
                 p {
                     font-family: "Heebo", sans-serif;
@@ -62,7 +82,8 @@
                     font-weight: 300;
                     line-height: 25.78px;
                     text-align: left;
-
+                    color: #000;
+                    max-width: 413px;
                 }
             }
         }

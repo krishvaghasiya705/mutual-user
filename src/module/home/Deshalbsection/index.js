@@ -18,6 +18,14 @@ export default function Deshalbsection() {
             </div>
           </div>
           <div className="deshalb-grid-items-two">
+            <div className="das-slide-div-main">
+              <div className="das-slide-flow-main"></div>
+              <div className="das-titles-div-main">
+                <h2>Das Beste in deiner Stadt</h2>
+                <h2>Personalisierte Angebote</h2>
+                <h2>Geld sparen und mehr genießen</h2>
+              </div>
+            </div>
             <div className="deshalb-grid-items-two-peragraph">
               <p>
                 Durch die Community bist du immer informiert, was in deiner Umgebung passiert: Haben neue Restaurants eröffnet? Gibt es dort neue exotische Gerichte? Welches coole Event steht an? Mitglieder:innen können ihre Erfahrungen und
