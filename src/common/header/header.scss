@@ -1,15 +1,12 @@
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9;
+    position: static;
     width: 100%;
     box-sizing: border-box;
-    padding: 0 53px 0 71px;
+    padding: 62px 53px 0 71px;
     font-family: 'Helvetica', 'Arial', sans-serif;
     font-family: 'Golden Plains - Demo', sans-serif;
-    margin: 61px 0 0 0;
     background-color: transparent;
+    background: linear-gradient(90deg, #1A1822 50%, #F3363C 50%);
 
     .header-main-alignment {
         display: flex;

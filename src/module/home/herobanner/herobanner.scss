@@ -1,18 +1,15 @@
 .herobanner {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     position: relative;
     background: linear-gradient(90deg, #1A1822 50%, #F3363C 50%);
 
     .herobanner-content {
-        position: absolute;
-        top: 0;
-        left: 0;
         box-sizing: border-box;
         width: 100%;
-        height: calc(100% - 122px);
+        height: 100%;
         color: #FFF;
-        margin: 122px 0 0 0;
+        padding: 71px 0 0 0;
 
         .herobanner-container {
             max-width: 1244px;
@@ -38,10 +35,13 @@
                     }
 
                     svg {
-                        margin: 10px 0 0 45px;
+                        margin: 10px 0 0 86px;
                     }
 
                     p {
+                        display: flex;
+                        justify-content: end;
+                        align-items: center;
                         font-family: "Montaga", serif;
                         font-size: 96px;
                         font-weight: 400;
@@ -51,6 +51,40 @@
                     }
                 }
             }
+
+            .herobanner-mobile-image-main {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 0 0 19px;
+
+                img {
+                    margin: 0 0 -100px 0;
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .social-media-frame {
+        position: fixed;
+        top: 50%;
+        left: 34px;
+        transform: translateY(-50%);
+        border-radius: 40px;
+        background-color: #F3363C;
+        box-shadow: 0px 4px 10px 0px #0000001A;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 21px 11px;
+
+        span {
+            height: 1px;
+            width: 13px;
+            background-color: #000;
         }
     }
 }

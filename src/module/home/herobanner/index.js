@@ -1,6 +1,10 @@
 import React from "react";
 import "./herobanner.scss";
+
 import Herobannermutuals from "../../../assets/svg/herobannermutuals";
+import Herobannermobileimage from "../../../assets/image/herobannermobileimage.png";
+import Linkedinicon from "../../../assets/svg/linkedin.svg";
+import Instagramicon from "../../../assets/svg/instagram.svg";
 
 export default function Herobanner() {
   return (
@@ -20,7 +24,20 @@ export default function Herobanner() {
               </h1>
             </div>
           </div>
+          <div className="herobanner-mobile-image-main">
+            <img src={Herobannermobileimage} alt="Herobannermobileimage" />
+          </div>
         </div>
+      </div>
+
+      <div className="social-media-frame">
+        <a href="https://in.linkedin.com/">
+          <img src={Linkedinicon} alt="Linkedinicon" />
+        </a>
+        <span></span>
+        <a href="https://www.instagram.com/">
+          <img src={Instagramicon} alt="Instagramicon" />
+        </a>
       </div>
     </div>
   );
