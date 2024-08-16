@@ -1,22 +1,26 @@
 header {
     width: 100%;
     box-sizing: border-box;
-    padding: 62px 0 0 0;
+    padding: 4vw 0 0 0;
     font-family: 'Helvetica', 'Arial', sans-serif;
     font-family: 'Golden Plains - Demo', sans-serif;
     background-color: transparent;
     background: linear-gradient(90deg, #1A1822 50%, #F3363C 50%);
 
+    a {
+        text-decoration-line: none;
+    }
+
     .header-container {
-        max-width: -webkit-fill-available;
+        max-width: 85vw;
         margin: 0 auto;
-        padding: 0 20px;
+        padding: 0 2vw;
 
         .header-main-alignment {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            gap: 10px;
+            gap: 1vw;
 
             .header-logo-main {
                 display: flex;
@@ -27,8 +31,8 @@ header {
                     text-decoration-line: none;
 
                     img {
-                        width: 200px;
-                        height: 50px;
+                        width: 10vw;
+                        height: 2.5vw;
                     }
                 }
             }
@@ -37,30 +41,29 @@ header {
                 display: flex;
                 justify-content: end;
                 align-items: center;
-                gap: 20px;
+                gap: 1.5vw;
             }
 
             .header-content-main-one {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                gap: 20px;
-                padding: 11px 15px;
+                gap: 1.5vw;
+                padding: 0.5vw 1vw;
 
                 .teil-button {
-                    // background-color: #1A1822;
-                    border-radius: 20px;
+                    border-radius: 1vw;
 
                     button {
                         cursor: pointer;
                         background-color: #AEAEAE1A;
                         border: none;
-                        border-radius: 20px;
-                        padding: 11px 15px;
+                        border-radius: 1vw;
+                        padding: 0.5vw 1vw;
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        gap: 5px;
+                        gap: 0.5vw;
                         outline: none;
 
                         &:focus {
@@ -69,9 +72,9 @@ header {
 
                         p {
                             font-family: 'Helvetica', 'Arial', sans-serif;
-                            font-size: 16px;
+                            font-size: 0.8vw;
                             font-weight: 700;
-                            line-height: 16.5px;
+                            line-height: 1vw;
                             letter-spacing: 0.02em;
                             text-align: center;
                             color: #FFF;
@@ -81,9 +84,9 @@ header {
 
                 a {
                     font-family: 'Helvetica', 'Arial', sans-serif;
-                    font-size: 16px;
+                    font-size: 0.8vw;
                     font-weight: 700;
-                    line-height: 16.5px;
+                    line-height: 1vw;
                     letter-spacing: 0.02em;
                     text-align: center;
                     color: #FFF;
@@ -95,22 +98,21 @@ header {
                 display: flex;
                 justify-content: end;
                 align-items: center;
-                gap: 20px;
+                gap: 1.5vw;
 
                 .mutuals-button {
-                    border-radius: 20px;
-                    // background-color: #F3363C;
+                    border-radius: 1vw;
 
                     button {
                         cursor: pointer;
                         background-color: #FFFFFF1A;
                         border: none;
-                        border-radius: 20px;
-                        padding: 11px 15px;
+                        border-radius: 1vw;
+                        padding: 0.5vw 1vw;
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        gap: 5px;
+                        gap: 0.5vw;
                         outline: none;
 
                         &:focus {
@@ -119,9 +121,9 @@ header {
 
                         p {
                             font-family: 'Helvetica', 'Arial', sans-serif;
-                            font-size: 16px;
+                            font-size: 0.8vw;
                             font-weight: 700;
-                            line-height: 16.5px;
+                            line-height: 1vw;
                             letter-spacing: 0.02em;
                             text-align: center;
                             color: #FFF;
@@ -135,20 +137,15 @@ header {
                     }
                 }
 
-                a {
-                    text-decoration-line: none;
-                }
-
                 .language-button {
-
                     button {
-                        padding: 3px 3px;
+                        padding: 0.2vw;
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        gap: 6px;
+                        gap: 0.3vw;
                         background: #FFFFFF;
-                        border-radius: 15px;
+                        border-radius: 1vw;
                         border: none;
                         outline: none;
 
@@ -163,14 +160,14 @@ header {
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            width: 24px;
-                            height: 24px;
+                            width: 1.5vw;
+                            height: 1.5vw;
 
                             span {
                                 font-family: 'Helvetica', 'Arial', sans-serif;
-                                font-size: 10px;
+                                font-size: 0.5vw;
                                 font-weight: 700;
-                                line-height: 9.5px;
+                                line-height: 0.6vw;
                                 letter-spacing: 0.02em;
                                 text-align: center;
                                 color: #7E7E7E;
