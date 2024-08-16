@@ -1,0 +1,80 @@
+.card-section {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+
+    .card-div {
+        min-height: 560px;
+        border-radius: 30px;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .card-div-layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            transition: 0.3s ease-in-out;
+
+            h2 {
+                font-family: "Golden Plains - Demo", sans-serif;
+                font-size: 50px;
+                font-weight: 400;
+                line-height: 62.5px;
+                letter-spacing: 0.02em;
+                color: #4de5ea;
+                transform: translateY(50px);
+                transition: 0.3s ease-in-out;
+            }
+
+            span {
+                margin-top: 6px;
+                display: block;
+                font-size: 27px;
+                font-weight: 500;
+                line-height: 50.5px;
+                letter-spacing: 0.02em;
+                color: #ffffff99;
+                opacity: 0;
+                transform: translateY(100px);
+                transition: 0.3s ease-in-out;
+            }
+        }
+
+        &:hover {
+            .card-div-layer {
+                background: rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(5px);
+                transition: 0.3s ease-in-out;
+
+                h2 {
+                    color: #fff;
+                    transform: translateY(0px);
+                    transition: 0.3s ease-in-out;
+                }
+
+                span {
+                    opacity: 1;
+                    transform: translateY(0px);
+                    transition: 0.3s ease-in-out;
+                }
+            }
+        }
+    }
+}
