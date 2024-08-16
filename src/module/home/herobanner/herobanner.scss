@@ -15,7 +15,7 @@
         margin: 122px 0 0 0;
 
         .herobanner-container {
-            max-width: 1322px;
+            max-width: 1244px;
             margin: 0 auto;
             padding: 0 20px;
 
@@ -23,7 +23,6 @@
                 display: flex;
                 justify-content: start;
                 align-items: center;
-                flex-direction: column;
 
                 h1 {
                     font-family: "Montaga", serif;
@@ -35,10 +34,20 @@
 
                     span {
                         color: #000;
+                        margin: 0 0 0 45px;
                     }
 
                     svg {
-                        margin: 10px 0 0 0;
+                        margin: 10px 0 0 45px;
+                    }
+
+                    p {
+                        font-family: "Montaga", serif;
+                        font-size: 96px;
+                        font-weight: 400;
+                        line-height: 109.5px;
+                        text-align: right;
+                        color: #FFF;
                     }
                 }
             }

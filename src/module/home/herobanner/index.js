@@ -8,15 +8,15 @@ export default function Herobanner() {
       <div className="herobanner-content">
         <div className="herobanner-container">
           <div className="herobanner-title-main">
-            <div className="">
+            <div>
               <h1>
                 Einfach mehr <span>genießen</span>
               </h1>
-            </div>
-            <div>
               <h1>
-                mit
-                <Herobannermutuals />
+                <p>
+                  mit
+                  <Herobannermutuals />
+                </p>
               </h1>
             </div>
           </div>
