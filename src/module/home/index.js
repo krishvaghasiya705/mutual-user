@@ -4,12 +4,14 @@ import Herobanner from "./herobanner";
 import Deshalbsection from "./Deshalbsection";
 import GroupPhoto from "./groupPhoto";
 import Profiles from "./profiles";
+import Mobilesection from "./mobilesection";
 
 export default function Home() {
   return (
     <div>
       <Herobanner />
       <Deshalbsection />
+      <Mobilesection />
       <GroupPhoto />
       <Profiles />
     </div>
