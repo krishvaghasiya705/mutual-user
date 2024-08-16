@@ -54,11 +54,34 @@
             text-align: left;
 
             .das-slide-div-main {
+                ::-webkit-scrollbar {
+                    width: 5px;
+                }
 
-                .das-slide-flow-main {}
+                ::-webkit-scrollbar-track {
+                    background: #EBEBEE;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+
+                ::-webkit-scrollbar-thumb {
+                    cursor: pointer;
+                    border-radius: 5px;
+                    background: #6B66DA;
+                }
 
                 .das-titles-div-main {
-                    padding: 23px 0 24px 29px;
+                    height: 190px;
+                    box-sizing: border-box;
+                    padding: 23px 0 23px 29px;
+                    overflow-x: hidden;
+                    overflow-y: auto;
+                    direction: rtl;
+                    outline: none !important;
+
+                    :first-child {
+                        color: #6B66DA;
+                    }
 
                     h2 {
                         font-family: 'Helvetica', 'Arial', sans-serif;
@@ -68,7 +91,8 @@
                         letter-spacing: 0.02em;
                         text-align: left;
                         color: #000;
-                        padding: 0 0 30px 0;
+                        padding: 0 0 17px 0;
+                        direction: ltr;
                     }
                 }
             }

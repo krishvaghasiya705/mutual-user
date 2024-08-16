@@ -21,9 +21,13 @@ export default function Deshalbsection() {
             <div className="das-slide-div-main">
               <div className="das-slide-flow-main"></div>
               <div className="das-titles-div-main">
-                <h2>Das Beste in deiner Stadt</h2>
-                <h2>Personalisierte Angebote</h2>
-                <h2>Geld sparen und mehr genießen</h2>
+                {Array(3).fill(
+                  <div>
+                    <h2>Das Beste in deiner Stadt</h2>
+                    <h2>Personalisierte Angebote</h2>
+                    <h2>Geld sparen und mehr genießen</h2>
+                  </div>
+                )}
               </div>
             </div>
             <div className="deshalb-grid-items-two-peragraph">
