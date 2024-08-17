@@ -3,10 +3,10 @@ import React from "react";
 import "./header1.scss";
 import { NavLink } from "react-router-dom";
 
-import Headerlogo from "../../assets/svg/mutualslogo.svg";
 import DropdownIcon from "../../assets/svg/dropdownicon.svg";
 
 function Header() {
+  
   return (
     <div>
       <header>
@@ -14,7 +14,7 @@ function Header() {
           <div className="header-main-alignment">
             <div className="header-logo-main">
               <NavLink to={"/"}>
-                <img src={Headerlogo} alt="Headerlogo" />
+                <h1>MUTUALZ</h1>
               </NavLink>
             </div>
             <div className="header-content-main-one">

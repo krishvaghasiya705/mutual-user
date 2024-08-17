@@ -2,7 +2,6 @@ import React from "react";
 import "./werdesection.scss";
 import Werdeborderone from "../../../assets/mutualssvgimages/werdeborderone";
 import Werdebordertwo from "../../../assets/mutualssvgimages/werdebordertwo";
-import Werdeborderonelogo from "../../../assets/mutualssvgimages/werdeborderonelogo";
 
 export default function Werdesection() {
   return (
@@ -13,9 +12,7 @@ export default function Werdesection() {
             <span>Werde</span>
             <strong>
               <Werdeborderone />
-              <b>
-                <Werdeborderonelogo />
-              </b>
+              <b>MUTUALZ</b>
             </strong>
             <br />
             <h1>

@@ -126,10 +126,13 @@ footer {
             align-items: start;
             justify-content: center;
 
-            input {
+            input[type="checkbox"] {
                 width: 15px;
                 height: 15px;
                 cursor: pointer;
+                border: none;
+                border-radius: 0;
+                background-color: #FFF;
 
                 &:focus {
                     outline: none;

@@ -1,7 +1,6 @@
 import React from "react";
 import "./deshalbsection.scss";
 import Mutualsborderone from "../../../assets/mutualssvgimages/mutualsborderone";
-import Mutualsborderonelogo from "../../../assets/mutualssvgimages/mutualsborderonelogo.svg";
 
 export default function Deshalbsection() {
   return (
@@ -13,7 +12,7 @@ export default function Deshalbsection() {
             <div className="mutuals-bordered-div-main">
               <Mutualsborderone />
               <div className="mutualsborderonelogo">
-                <img src={Mutualsborderonelogo} alt="Mutualsborderonelogo" />
+                <span>MUTUALZ</span>
               </div>
             </div>
           </div>

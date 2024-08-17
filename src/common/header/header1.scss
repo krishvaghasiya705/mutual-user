@@ -26,9 +26,18 @@ header {
                 a {
                     text-decoration-line: none;
 
-                    img {
-                        width: 200px;
-                        height: 50px;
+                    // img {
+                    //     width: 200px;
+                    //     height: 50px;
+                    // }
+
+                    h1 {
+                        letter-spacing: 2px;
+                        color: #FFF;
+                        line-height: normal;
+                        font-weight: 400;
+                        font-size: 46px;
+                        font-family: 'Golden Plains - Demo', sans-serif;
                     }
                 }
             }

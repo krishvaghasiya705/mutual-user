@@ -1,7 +1,6 @@
 import React from "react";
 import "./herobanner.scss";
 
-import Herobannermutuals from "../../../assets/svg/herobannermutuals";
 import Herobannermobileimage from "../../../assets/image/herobannermobileimage.png";
 import Linkedinicon from "../../../assets/svg/linkedin.svg";
 import Instagramicon from "../../../assets/svg/instagram.svg";
@@ -18,8 +17,7 @@ export default function Herobanner() {
               </h1>
               <h1>
                 <p>
-                  mit
-                  <Herobannermutuals />
+                  mit <span>MUTUALZ</span>
                 </p>
               </h1>
             </div>
