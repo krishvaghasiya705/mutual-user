@@ -1,12 +1,30 @@
-import React from "react";
-// import "./header.scss";
+import React, { useState, useEffect } from "react";
 import "./header1.scss";
 import { NavLink } from "react-router-dom";
 
 import DropdownIcon from "../../assets/svg/dropdownicon.svg";
+import Menuicon from "../../assets/icons/menu.png";
+import Sidebar from "../../components/sidebar";
 
 function Header() {
-  
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
+
+  useEffect(() => {
+    if (isSidebarOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isSidebarOpen]);
+
   return (
     <div>
       <header>
@@ -52,10 +70,14 @@ function Header() {
                   </p>
                 </button>
               </div>
+              <div className="header-sidebar-image">
+                <img src={Menuicon} alt="Menuicon" onClick={toggleSidebar} style={{ cursor: "pointer" }} />
+              </div>
             </div>
           </div>
         </div>
       </header>
+      <Sidebar isOpen={isSidebarOpen} onClose={toggleSidebar} />
     </div>
   );
 }

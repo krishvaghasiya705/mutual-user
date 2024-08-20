@@ -1,7 +1,7 @@
 header {
     width: 100%;
     box-sizing: border-box;
-    padding: 62px 0 0 0;
+    padding: 6.9% 0 0 0;
     font-family: 'Helvetica', 'Arial', sans-serif;
     font-family: 'Golden Plains - Demo', sans-serif;
     background-color: transparent;
@@ -16,7 +16,7 @@ header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            gap: 10px;
+            gap: 0;
 
             .header-logo-main {
                 display: flex;
@@ -26,11 +26,6 @@ header {
                 a {
                     text-decoration-line: none;
 
-                    // img {
-                    //     width: 200px;
-                    //     height: 50px;
-                    // }
-
                     h1 {
                         letter-spacing: 2px;
                         color: #FFF;
@@ -38,6 +33,10 @@ header {
                         font-weight: 400;
                         font-size: 46px;
                         font-family: 'Golden Plains - Demo', sans-serif;
+
+                        @media (max-width:1200px) {
+                            font-size: 45px;
+                        }
                     }
                 }
             }
@@ -55,6 +54,14 @@ header {
                 align-items: center;
                 gap: 20px;
                 padding: 11px 15px;
+
+                @media (max-width:1100px) {
+                    gap: 10px;
+                }
+
+                @media (max-width:1024px) {
+                    display: none;
+                }
 
                 .teil-button {
                     // background-color: #1A1822;
@@ -84,6 +91,10 @@ header {
                             letter-spacing: 0.02em;
                             text-align: center;
                             color: #FFF;
+
+                            @media (max-width:1200px) {
+                                font-size: 13px;
+                            }
                         }
                     }
                 }
@@ -97,6 +108,10 @@ header {
                     text-align: center;
                     color: #FFF;
                     text-decoration-line: none;
+
+                    @media (max-width:1200px) {
+                        font-size: 13px;
+                    }
                 }
             }
 
@@ -107,8 +122,14 @@ header {
                 gap: 20px;
 
                 .mutuals-button {
+                    display: block;
                     border-radius: 20px;
                     // background-color: #F3363C;
+
+                    @media (max-width:1024px) {
+                        display: none;
+                    }
+
 
                     button {
                         cursor: pointer;
@@ -139,6 +160,10 @@ header {
                                 font-family: 'Golden Plains - Demo', sans-serif;
                                 font-weight: 400;
                                 text-align: center;
+                            }
+
+                            @media (max-width:1200px) {
+                                font-size: 13px;
                             }
                         }
                     }
@@ -193,6 +218,21 @@ header {
                                 color: #FFF !important;
                             }
                         }
+                    }
+                }
+
+                .header-sidebar-image {
+                    display: none;
+
+                    @media (max-width:1024px) {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    img {
+                        width: 25px;
+                        height: 25px;
                     }
                 }
             }

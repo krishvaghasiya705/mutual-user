@@ -21,6 +21,11 @@
                 display: flex;
                 justify-content: start;
                 align-items: center;
+                margin: 0 0 0 2.5%;
+
+                @media (max-width:950px) {
+                    margin: 0 0 0 16%;
+                }
 
                 h1 {
                     font-family: "Montaga", serif;
@@ -30,9 +35,17 @@
                     text-align: right;
                     color: #FFF;
 
+                    @media (max-width:1024px) {
+                        font-size: 50px;
+                    }
+
                     span {
                         color: #000;
-                        margin: 0 0 0 45px;
+                        margin: 0;
+
+                        // @media (max-width:950px) {
+                        //     margin: 0 0 0 10px;
+                        // }
                     }
 
                     p {
@@ -46,10 +59,19 @@
                         text-align: right;
                         color: #FFF;
 
+                        @media (max-width:1024px) {
+                            font-size: 50px;
+                        }
+
                         span {
-                            margin: 25px 0 0 86px !important;
+                            margin: 2% 0 0 5% !important;
                             color: #FFF !important;
                             font-family: 'Golden Plains - Demo', sans-serif;
+
+                            @media (max-width:1024px) {
+                                font-size: 50px;
+                                margin: 10px 2% 0 4% !important;
+                            }
                         }
                     }
                 }
@@ -59,10 +81,10 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                margin: 0 0 0 19px;
+                margin: 0 0 0 2%;
 
                 img {
-                    margin: 0 0 -100px 0;
+                    margin: 0 0 -8% 0;
                     display: block;
                 }
             }

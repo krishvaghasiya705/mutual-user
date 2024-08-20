@@ -9,31 +9,26 @@ html {
   /* font-family: "Inter", sans-serif; */
 }
 
-/* ::-webkit-scrollbar {
-  width: 7px;
-  height: 5px;
-} */
+::-webkit-scrollbar {
+  width: 5px;
+}
 
-/* ::-webkit-scrollbar-track {
-  background: #FFF;
-} */
+::-webkit-scrollbar-track {
+  background: #ebebee;
+  border-radius: 5px;
+}
 
-/* ::-webkit-scrollbar-thumb {
-  cursor: pointer;
-  background: #EF404A;
-  border-radius: 10px 0 0 10px;
-} */
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: #6b66da;
+}
 
-/* ::-webkit-scrollbar-thumb:hover {
-  background: #ff000d;
-} */
-
-/* ::-moz-selection {
-  color: #EF404A;
-  background: #FFF;
+::-moz-selection {
+  color: #fff;
+  background: #6b66da;
 }
 
 ::selection {
-  color: #EF404A;
-  background: #FFF;
-} */
+  color: #fff;
+  background: #6b66da;
+}

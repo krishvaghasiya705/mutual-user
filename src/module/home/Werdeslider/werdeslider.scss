@@ -1,142 +1,164 @@
-.werde-slider-section-main {
-    width: 100%;
-    margin: 102px 0 220px 0;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    align-items: center;
-    outline: none !important;
+.werde-slider-section {
     position: relative;
 
-    div {
-        outline: none !important;
+    .slider-werde-background-shape {
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+        transform: translate(-66%, 89%);
     }
 
-    .werde-slider-main {
+    .werde-slider-section-main {
         width: 100%;
-        max-width: 1200px;
+        margin: 102px 0 160px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        outline: none !important;
         position: relative;
-        padding: 0 10%;
+        overflow: hidden;
+        background-color: transparent !important;
 
-        .slick-list {
-            overflow: visible;
+        div {
+            outline: none !important;
         }
 
-        .slick-center {
-            opacity: 1 !important;
-            transform: scale(1);
-            z-index: 2;
-            margin: 0;
-        }
+        .werde-slider-main {
+            width: 100%;
+            max-width: 1200px;
+            position: relative;
+            padding: 0 10%;
 
-        .slick-current {
-            opacity: 1 !important;
-            transform: scale(1);
-            z-index: 2;
-            margin: 0;
-        }
+            .slick-list {
+                overflow: visible;
+            }
 
-        .slick-active {
-            opacity: 0.7;
-            transform: scale(1) !important;
-            z-index: 1;
-        }
+            .slick-center {
+                opacity: 1 !important;
+                transform: scale(1);
+                z-index: 2;
+                margin: 0;
+            }
 
-        .slick-slide {
-            opacity: 0.5;
-            // transform: scale(1);
-            transform: scale(0.9);
-            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-        }
+            .slick-current {
+                opacity: 1 !important;
+                transform: scale(1);
+                z-index: 2;
+                margin: 0;
+            }
 
-        .slick-arrow {
-            display: none !important;
-        }
+            .slick-active {
+                opacity: 0.7;
+                transform: scale(1) !important;
+                z-index: 1;
+            }
 
-        .werde-slider-boxe-alignment {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: fit-content;
-            gap: 80px;
-            margin: 0 auto;
-            /* Center the content */
+            .slick-slide {
+                opacity: 0.5;
+                // transform: scale(1);
+                transform: scale(0.9);
+                transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+            }
 
-            .custom-slider-dots {
-                text-align: center;
+            .slick-arrow {
+                display: none !important;
+            }
+
+            .werde-slider-boxe-alignment {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                gap: 10px;
-
-                .dot {
-                    display: inline-block;
-                    width: 20px;
-                    height: 5px;
-                    background-color: #B1B1B1;
-                    border-radius: 5px;
-                    cursor: pointer;
-                    transition: background-color 0.3s;
-                }
-
-                .active {
-                    background-color: #F3363C;
-                }
-            }
-
-            .restaurant-box-main {
                 width: fit-content;
+                gap: 80px;
+                margin: 0 auto;
 
-                *:not(.simulator) {
-                    scrollbar-width: 5px !important;
+                .custom-slider-dots {
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+
+                    .dot {
+                        display: inline-block;
+                        width: 20px;
+                        height: 5px;
+                        background-color: #B1B1B1;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        transition: .5s ease-in-out;
+
+                        &:hover {
+                            transition: .5s ease-in-out;
+                            background-color: #f2444ad3;
+                        }
+                    }
+
+                    .active {
+                        transition: .5s ease-in-out;
+                        background-color: #F3363C;
+
+                        &:hover {
+                            transition: .5s ease-in-out;
+                            background-color: #F3363C;
+                        }
+                    }
                 }
 
-                ::-webkit-scrollbar {
-                    width: 5px;
-                }
+                .restaurant-box-main {
+                    width: fit-content;
 
-                ::-webkit-scrollbar-track {
-                    background: #EBEBEE;
-                    border-radius: 5px;
-                    cursor: pointer;
-                }
+                    *:not(.simulator) {
+                        scrollbar-width: 5px !important;
+                    }
 
-                ::-webkit-scrollbar-thumb {
-                    cursor: pointer;
-                    border-radius: 5px;
-                    background: #6B66DA;
-                }
+                    ::-webkit-scrollbar {
+                        width: 5px;
+                    }
 
-                .restaurant-box-scroll-main {
-                    height: 312px;
-                    box-sizing: border-box;
-                    overflow-y: auto;
-                    overflow-x: hidden;
-                    direction: rtl;
-                    padding: 23px 0 22px 29px;
-                    margin: 0 0 40px 0;
-                }
+                    ::-webkit-scrollbar-track {
+                        background: #EBEBEE;
+                        border-radius: 5px;
+                        cursor: pointer;
+                    }
 
-                h1 {
-                    font-family: "Helvetica", "Arial", sans-serif;
-                    font-size: 32px;
-                    font-weight: 700;
-                    line-height: 25.5px;
-                    letter-spacing: 0.02em;
-                    text-align: left;
-                    color: #F3363C;
-                    margin: 0 0 20px 0;
-                }
+                    ::-webkit-scrollbar-thumb {
+                        cursor: pointer;
+                        border-radius: 5px;
+                        background: #6B66DA;
+                    }
 
-                p {
-                    font-family: "Heebo", sans-serif;
-                    font-size: 20px;
-                    font-weight: 300;
-                    line-height: 25.78px;
-                    text-align: left;
-                    color: #000;
-                    max-width: 368px;
-                    margin: 0 0 100px 0;
+                    .restaurant-box-scroll-main {
+                        height: 312px;
+                        box-sizing: border-box;
+                        overflow-y: auto;
+                        overflow-x: hidden;
+                        direction: rtl;
+                        padding: 23px 0 22px 29px;
+                        margin: 0 0 40px 0;
+                    }
+
+                    h1 {
+                        font-family: "Helvetica", "Arial", sans-serif;
+                        font-size: 32px;
+                        font-weight: 700;
+                        line-height: 25.5px;
+                        letter-spacing: 0.02em;
+                        text-align: left;
+                        color: #F3363C;
+                        margin: 0 0 20px 0;
+                    }
+
+                    p {
+                        font-family: "Heebo", sans-serif;
+                        font-size: 20px;
+                        font-weight: 300;
+                        line-height: 25.78px;
+                        text-align: left;
+                        color: #000;
+                        max-width: 368px;
+                        margin: 0 0 100px 0;
+                    }
                 }
             }
         }
