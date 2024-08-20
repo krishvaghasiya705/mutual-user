@@ -25,6 +25,12 @@ function Header() {
     };
   }, [isSidebarOpen]);
 
+  const [selectedLanguage, setSelectedLanguage] = useState("DE");
+
+  const toggleLanguage = () => {
+    setSelectedLanguage((prevLanguage) => (prevLanguage === "DE" ? "EN" : "DE"));
+  };
+
   return (
     <div>
       <header>
@@ -60,12 +66,23 @@ function Header() {
                 </div>
               </NavLink>
 
-              <div className="language-button">
+              {/* <div className="language-button">
                 <button>
                   <p id="Checked">
                     <span>DE</span>
                   </p>
                   <p>
+                    <span>EN</span>
+                  </p>
+                </button>
+              </div> */}
+
+              <div className="language-button" onClick={toggleLanguage}>
+                <button>
+                  <p id={selectedLanguage === "DE" ? "Checked" : ""}>
+                    <span>DE</span>
+                  </p>
+                  <p id={selectedLanguage === "EN" ? "Checked" : ""}>
                     <span>EN</span>
                   </p>
                 </button>

@@ -173,8 +173,55 @@ header {
                     text-decoration-line: none;
                 }
 
-                .language-button {
+                // .language-button {
 
+                //     button {
+                //         padding: 3px 3px;
+                //         display: flex;
+                //         justify-content: center;
+                //         align-items: center;
+                //         gap: 6px;
+                //         background: #FFFFFF;
+                //         border-radius: 15px;
+                //         border: none;
+                //         outline: none;
+
+                //         &:focus {
+                //             outline: none;
+                //         }
+
+                //         p {
+                //             cursor: pointer;
+                //             background-color: transparent;
+                //             border-radius: 50%;
+                //             display: flex;
+                //             justify-content: center;
+                //             align-items: center;
+                //             width: 24px;
+                //             height: 24px;
+
+                //             span {
+                //                 font-family: 'Helvetica', 'Arial', sans-serif;
+                //                 font-size: 10px;
+                //                 font-weight: 700;
+                //                 line-height: 9.5px;
+                //                 letter-spacing: 0.02em;
+                //                 text-align: center;
+                //                 color: #7E7E7E;
+                //             }
+                //         }
+
+                //         #Checked {
+                //             background-color: #F3363C !important;
+
+                //             span {
+                //                 color: #FFF !important;
+                //             }
+                //         }
+                //     }
+                // }
+
+                .language-button {
                     button {
                         padding: 3px 3px;
                         display: flex;
@@ -199,6 +246,7 @@ header {
                             align-items: center;
                             width: 24px;
                             height: 24px;
+                            transition: transform 0.3s ease, background-color 0.3s ease;
 
                             span {
                                 font-family: 'Helvetica', 'Arial', sans-serif;
@@ -208,6 +256,7 @@ header {
                                 letter-spacing: 0.02em;
                                 text-align: center;
                                 color: #7E7E7E;
+                                transition: color 0.3s ease;
                             }
                         }
 
@@ -220,6 +269,8 @@ header {
                         }
                     }
                 }
+
+
 
                 .header-sidebar-image {
                     display: none;
