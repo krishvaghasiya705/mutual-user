@@ -2,8 +2,9 @@
     margin: 100px 0 100px 0;
 
     .deshalb-container {
-        max-width: 100%;
-        padding: 0 15px;
+        max-width: 1190px;
+        margin: 0 auto;
+        padding: 0 20px;
     }
 
     .deshalb-grid-main {
@@ -32,9 +33,12 @@
 
             h1 {
                 font-family: "Montaga", serif;
-                font-size: 50px;
-                line-height: 1.2;
+                font-size: 60px;
+                font-weight: 400;
+                line-height: 62.5px;
+                letter-spacing: 0.02em;
                 text-align: left;
+                color: #000;
             }
 
             @media (max-width: 768px) {
@@ -57,12 +61,16 @@
 
                 .mutualsborderonelogo {
                     position: absolute;
-                    top: 50%;
-                    left: 50%;
+                    top: 54%;
+                    left: 44%;
                     transform: translate(-50%, -50%);
 
                     span {
-                        font-size: 90px;
+                        font-size: 110px;
+                        font-weight: 500;
+                        line-height: normal;
+                        font-family: 'Golden Plains - Demo', sans-serif;
+                        color: #F3363C;
                     }
 
                     @media (max-width: 768px) {
@@ -108,17 +116,28 @@
                 }
 
                 .das-titles-div-main {
-                    height: 160px;
-                    padding: 20px 0 20px 20px;
+                    height: 190px;
+                    box-sizing: border-box;
+                    padding: 23px 0 23px 29px;
                     overflow-x: hidden;
                     overflow-y: auto;
                     direction: rtl;
                     outline: none !important;
 
+                    :first-child {
+                        color: #6B66DA;
+                    }
+
                     h2 {
                         font-family: 'Helvetica', 'Arial', sans-serif;
-                        font-size: 28px;
-                        padding: 0 0 15px 0;
+                        font-size: 32px;
+                        font-weight: 700;
+                        line-height: normal;
+                        letter-spacing: 0.02em;
+                        text-align: left;
+                        color: #000;
+                        padding: 0 0 17px 0;
+                        direction: ltr;
                     }
 
                     @media (max-width: 768px) {
@@ -136,12 +155,16 @@
             }
 
             .deshalb-grid-items-two-peragraph {
-                padding: 30px 0 0 15px;
+                padding: 42px 0 0 21px;
 
                 p {
-                    font-size: 18px;
-                    line-height: 1.5;
-                    max-width: 100%;
+                    font-family: "Heebo", sans-serif;
+                    font-size: 20px;
+                    font-weight: 300;
+                    line-height: 25.78px;
+                    text-align: left;
+                    color: #000;
+                    max-width: 413px;
                 }
 
                 @media (max-width: 768px) {
